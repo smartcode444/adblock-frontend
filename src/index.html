@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdBlock — Block ads across every app on your phone</title>
+<meta name="description" content="AdBlock filters ad and tracker traffic at the network level, before it reaches your games, apps, and streaming. No root required.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="wordmark">AdBlock</a>
+    <nav class="main-nav">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <a href="#download" class="btn btn-primary btn-small">Download</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <h1>Ads don't get a vote on your phone.</h1>
+        <p class="hero-sub">AdBlock filters ad and tracker traffic at the network level, before it reaches your games, apps, and streaming — no root required.</p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary">Download the APK</a>
+          <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
+        </div>
+        <p class="hero-note">Free for 7 days. No account needed to try it.</p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="chip-field" aria-hidden="true">
+          <span class="chip">pangle.io</span>
+          <span class="chip">hisavana.com</span>
+          <span class="chip">transacme.com</span>
+          <span class="chip">eagllwin.com</span>
+          <span class="chip">rayjump.com</span>
+        </div>
+
+        <!--
+          PHONE MOCKUP — this is a hand-built approximation of the app's
+          home screen, matching your original spec (circular toggle,
+          "PROTECTION ACTIVE" label, stats card, "Made by Victor S." line).
+
+          TO REPLACE WITH YOUR REAL SCREENSHOT:
+          1. Drop your screenshot into /assets/app-home.png
+          2. Delete everything inside <div class="phone-screen"> ... </div>
+          3. Replace it with: <img src="assets/app-home.png" alt="AdBlock app home screen">
+        -->
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="mock-statusbar"></div>
+            <div class="mock-app-title">AdBlock</div>
+
+            <div class="mock-toggle-wrap">
+              <div class="mock-toggle">
+                <svg viewBox="0 0 24 24" class="mock-shield" fill="none" stroke="currentColor" stroke-width="1.4">
+                  <path d="M12 2 4 5v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V5l-8-3Z"/>
+                  <path d="m8.5 12 2.5 2.5L16 9" />
+                </svg>
+              </div>
+              <p class="mock-toggle-label">Protection active</p>
+              <p class="mock-credit">Made by Victor S.</p>
+            </div>
+
+            <div class="mock-stats-card">
+              <div class="mock-stat">
+                <span class="mock-stat-num">128</span>
+                <span class="mock-stat-label">Ads blocked</span>
+              </div>
+              <div class="mock-stat">
+                <span class="mock-stat-num">41</span>
+                <span class="mock-stat-label">Queries today</span>
+              </div>
+              <div class="mock-stat">
+                <span class="mock-stat-num">19</span>
+                <span class="mock-stat-label">Blocked today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTS STRIP -->
+  <section class="facts-strip">
+    <div class="wrap facts-inner">
+      <div class="fact">
+        <span class="fact-head">System-wide</span>
+        <span class="fact-body">Filters every app, not just a browser</span>
+      </div>
+      <div class="fact">
+        <span class="fact-head">No root</span>
+        <span class="fact-body">Runs as a local VPN — nothing to unlock</span>
+      </div>
+      <div class="fact">
+        <span class="fact-head">7-day trial</span>
+        <span class="fact-body">Try it fully before you pay anything</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features">
+    <div class="wrap">
+      <h2>What it actually does</h2>
+
+      <div class="feature-row">
+        <span class="feature-tag">system-wide</span>
+        <div class="feature-body">
+          <h3>Filtering that follows you everywhere</h3>
+          <p>AdBlock works at the network level, so it filters ad and tracker traffic across every app on your device — games, browsers, and streaming apps alike — not just one app at a time.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <span class="feature-tag">streaming apps</span>
+        <div class="feature-body">
+          <h3>Tuned against real ad networks</h3>
+          <p>Built and tested against the ad networks actually used by popular streaming and download apps in Nigeria — significantly reducing pop-up and pre-roll ads. No blocker can promise every single ad, everywhere; this one is honest about that and keeps improving.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <span class="feature-tag">no root</span>
+        <div class="feature-body">
+          <h3>Nothing to unlock</h3>
+          <p>AdBlock runs as a local VPN on your device. There's no rooting, no warranty risk, and no complicated setup — install it and turn it on.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <span class="feature-tag">data plan</span>
+        <div class="feature-body">
+          <h3>Every blocked ad is data you keep</h3>
+          <p>Ad and tracker requests cost data before you ever see them. Blocking them at the source means less of your plan goes to content you never asked for.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="comparison">
+    <div class="wrap">
+      <h2>See it work</h2>
+      <p class="comparison-sub">A side-by-side look at a game ad breaking up a video — with AdBlock off, and with it on.</p>
+
+      <div class="compare-grid">
+        <div class="compare-panel">
+          <span class="compare-label">Without AdBlock</span>
+          <div class="compare-mock compare-mock--off">
+            <div class="mock-video-bar"></div>
+            <div class="mock-ad-banner">Install now — Free Fire Max</div>
+            <div class="mock-ad-banner mock-ad-banner--sm">PalmPay — get ₦500 bonus</div>
+          </div>
+        </div>
+        <div class="compare-panel">
+          <span class="compare-label">With AdBlock</span>
+          <div class="compare-mock compare-mock--on">
+            <div class="mock-video-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        SCREEN RECORDING — once you have the real comparison recording,
+        drop it in as /assets/comparison.mp4 and uncomment the block below.
+        A poster image (assets/comparison-poster.jpg) shows before it plays.
+      -->
+      <!--
+      <div class="video-slot">
+        <video controls poster="assets/comparison-poster.jpg">
+          <source src="assets/comparison.mp4" type="video/mp4">
+        </video>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="wrap">
+      <h2>Getting started</h2>
+
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <div>
+            <h3>Download the APK</h3>
+            <p>Direct from this page. AdBlock isn't on the Play Store, since Google doesn't allow ad-blocking apps there.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <div>
+            <h3>Allow installation from this source</h3>
+            <p>Android will ask once. Approve it, then continue the install.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <div>
+            <h3>Turn on protection</h3>
+            <p>One tap on the shield. Android will ask to set up a VPN connection — that's AdBlock, running locally on your device.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <div>
+            <h3>Browse like normal</h3>
+            <p>Ad and tracker traffic gets filtered in the background, across your whole device.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="pricing">
+    <div class="wrap">
+      <h2>Pricing</h2>
+      <p class="pricing-sub">Try it fully free. Pay only if you want to keep it.</p>
+
+      <div class="pricing-grid">
+        <div class="price-col">
+          <h3>Free trial</h3>
+          <p class="price-amount">7 days</p>
+          <p class="price-detail">Full protection, no card required.</p>
+          <a href="#download" class="btn btn-outline">Start free</a>
+        </div>
+
+        <div class="price-col">
+          <h3>Monthly</h3>
+          <p class="price-amount">₦1,000<span>/month</span></p>
+          <p class="price-detail">Cancel anytime, no long-term commitment.</p>
+          <a href="#download" class="btn btn-outline">Choose monthly</a>
+        </div>
+
+        <div class="price-col price-col--featured">
+          <h3>Lifetime <span class="best-value">Best value</span></h3>
+          <p class="price-amount">₦10,000<span>once</span></p>
+          <p class="price-detail">Pay once, keep it for good.</p>
+          <a href="#download" class="btn btn-primary">Get lifetime</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD CTA -->
+  <section id="download" class="download-cta">
+    <div class="wrap download-inner">
+      <h2>Get AdBlock on your phone</h2>
+      <p>Direct APK download. Takes about a minute to install.</p>
+      <!-- TODO: replace href with your real GitHub Releases APK URL -->
+      <a href="#" class="btn btn-primary btn-large">Download the APK</a>
+      <p class="download-note">Android 8.0 and up. Not affiliated with Google Play.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span class="wordmark">AdBlock</span>
+    <span class="footer-credit">Built by Victor S.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

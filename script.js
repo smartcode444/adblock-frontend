@@ -50,6 +50,7 @@ updateHeaderState();
 loadAnalytics();
 
 const downloadButton = document.querySelector('a[download]');
+const downloadSection = document.querySelector('#download');
 
 if (downloadButton) {
   downloadButton.addEventListener('click', () => {
@@ -58,4 +59,25 @@ if (downloadButton) {
       link_url: downloadButton.href,
     });
   });
+}
+
+if (downloadSection && 'IntersectionObserver' in window) {
+  const sectionViewTracker = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        trackEvent('view_download_section', {
+          section_id: 'download',
+        });
+
+        observer.disconnect();
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  sectionViewTracker.observe(downloadSection);
 }

@@ -134,15 +134,26 @@
         <div class="compare-panel">
           <span class="compare-label">Without AdBlock</span>
           <div class="compare-mock compare-mock--off">
-            <div class="mock-video-bar"></div>
-            <div class="mock-ad-banner">Install now — Free Fire Max</div>
-            <div class="mock-ad-banner mock-ad-banner--sm">PalmPay — get ₦500 bonus</div>
+            <div class="mock-video-bar">
+                <div class="video-slot">
+                  <video controls poster="assets/comparison-poster.svg">
+                  <source src="assets/ADS.mp4" type="video/mp4">
+                  </video>
+                </div>  
+            </div>
+            <div class="mock-ad-banner mock-ad-banner--sm">Ads everytime</div>
           </div>
         </div>
         <div class="compare-panel">
           <span class="compare-label">With AdBlock</span>
           <div class="compare-mock compare-mock--on">
-            <div class="mock-video-bar"></div>
+            <div class="mock-video-bar">
+              <div class="video-slot">
+                <video controls poster="assets/comparison-poster.svg">
+                <source src="assets/NOADS.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -150,15 +161,15 @@
       <!--
         SCREEN RECORDING — once you have the real comparison recording,
         drop it in as /assets/comparison.mp4 and uncomment the block below.
-        A poster image (assets/comparison-poster.jpg) shows before it plays.
+        A poster image (assets/comparison-poster.svg) shows before it plays.
       -->
-      <!--
+      <!-- <p class="video-caption">A demonstration of AdBlock in action</p>
       <div class="video-slot">
-        <video controls poster="assets/comparison-poster.jpg">
-          <source src="assets/comparison.mp4" type="video/mp4">
+        <video controls poster="assets/comparison-poster.svg">
+          <source src="assets/NOADS.mp4" type="video/mp4">
         </video>
-      </div>
-      -->
+      </div> -->
+     
     </div>
   </section>
 

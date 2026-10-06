@@ -379,6 +379,7 @@ p { margin: 0; }
   inset: 14px;
   background: linear-gradient(160deg, #2a2c31, #16171a);
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .mock-ad-banner {
@@ -399,9 +400,19 @@ p { margin: 0; }
 }
 
 .video-slot {
-  margin-top: 32px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
-.video-slot video { width: 100%; border-radius: 10px; }
+.video-slot video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 8px;
+  background: #000;
+}
 
 /* ---------------------------------------------------------
    How it works

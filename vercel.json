@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://qs2c6s99mttp-production-xk5unlq2.europe-west1.suga.run/api/:path*"
+    },
+    {
+      "source": "/pay",
+      "destination": "https://qs2c6s99mttp-production-xk5unlq2.europe-west1.suga.run/pay"
+    }
+  ]
+}
